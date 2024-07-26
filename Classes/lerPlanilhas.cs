@@ -21,7 +21,7 @@ namespace extraiMarca.Classes
                         {
                             var marca = new MarcaExtrair();
                             marca.ProdutoKey = dataRow.Cell(1).Value.ToString();
-                            marca.Descricao = dataRow.Cell(2).Value.ToString();
+                            marca.Descricao = dataRow.Cell(2).Value.ToString().ToUpper();
 
                             listaDescricao.Add(marca);
 
@@ -64,7 +64,7 @@ namespace extraiMarca.Classes
                         if (dataRow.RowNumber() > 1)
                         {
                             var marcaExistente = new MarcaExistente();
-                            marcaExistente.Marca = dataRow.Cell(1).Value.ToString();
+                            marcaExistente.Marca = dataRow.Cell(1).Value.ToString().ToUpper();
 
                             listaMarca.Add(marcaExistente);
                         }
