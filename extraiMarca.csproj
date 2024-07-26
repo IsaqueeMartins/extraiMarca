@@ -8,10 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="24.7.0" />
     <PackageReference Include="ClosedXML" Version="0.102.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="planilhas\lista_marcas_preenchidas_25072024.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="planilhas\produtos_sem_marca25072024_1534.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
